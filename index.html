@@ -1,19 +1,168 @@
-<!DOCTYPE html>
-<html>
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Evergreen Digital Media</title>
-  <meta charset="UTF-8">
+  <meta name="description" content="Evergreen Digital Media produces original narrative horror and atmospheric storytelling across audio and video properties." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
-  <h1>Evergreen Digital Media</h1>
-  <p>Original narrative horror and atmospheric storytelling.</p>
 
-  <h2>Channels</h2>
-  <ul>
-    <li>Tales From Vault 13</li>
-    <li>The Last Emergency Broadcast</li>
-    <li>The Cold Case Records</li>
-    <li>Welcome To Dreadwood</li>
-  </ul>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+		<a class="brand" href="index.html" aria-label="Evergreen Digital Media Home">
+		  <img class="brand-logo" src="assets/img/egdm-logo-transparent.png" alt="Evergreen Digital Media logo" />
+		</a>
+
+      <nav class="nav" aria-label="Primary">
+		<a class="active" href="index.html">Home</a>
+        <a href="channels.html">Channels</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Original narrative horror and atmospheric storytelling.</h1>
+          <p class="lede">
+            Evergreen Digital Media is an independent entertainment publisher producing serialized horror properties in audio and video format.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="channels.html">View channels</a>
+            <a class="btn btn-secondary" href="#contact">Contact</a>
+          </div>
+
+          <p class="micro">
+            This site is a corporate identity page. All audience traffic is directed to our YouTube channels.
+          </p>
+        </div>
+
+        <div class="hero-card" role="note" aria-label="Company summary">
+          <div class="card">
+            <h2 class="card-title">What we make</h2>
+            <ul class="list">
+              <li>Serialized narrative horror</li>
+              <li>Found footage and broadcast style storytelling</li>
+              <li>Atmospheric audio first production</li>
+              <li>Original properties under a unified publishing umbrella</li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <h2 class="card-title">For partners</h2>
+            <p class="card-text">
+              Advertising, sponsorship, licensing, and collaboration inquiries are handled through the contact form below.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About us</h2>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Mission</h3>
+            <p>
+              Evergreen Digital Media builds original horror properties designed for long form listening and repeat viewing.
+              We focus on grounded realism, slow dread, and immersive sound design.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>What we are not</h3>
+            <p>
+              We are not a digital marketing agency. We do not sell SEO services, ad management, or lead generation.
+              We publish entertainment media and original storytelling.
+            </p>
+          </div>
+        </div>
+
+        <div class="panel subtle">
+          <h3>Properties</h3>
+          <p>
+            Our channels operate as distinct series under one publisher. See the full list on the Channels page.
+          </p>
+          <p>
+            <a href="channels.html">Go to channels</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact us</h2>
+        <p class="lede">
+          Use this form for business inquiries only. We do not share or sell submitted information.
+        </p>
+
+        <div class="contact-grid">
+          <form class="form" action="https://formspree.io/f/mjgengpr" method="POST">
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+
+            <label>
+              Company
+              <input name="company" type="text" autocomplete="organization" />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+
+            <button class="btn" type="submit">Send</button>
+
+            <p class="micro">
+              If you prefer, include a phone number in your message and we will reply by email to coordinate.
+            </p>
+          </form>
+
+          <aside class="panel">
+            <h3>Common inquiries</h3>
+            <ul class="list">
+              <li>Sponsorship and integrated reads</li>
+              <li>Licensing and syndication</li>
+              <li>Cross promotion and collaborations</li>
+              <li>Press and interview requests</li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <p class="micro">
+              Response times vary based on production schedule.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Copyright 2026 Evergreen Digital Media. All rights reserved.</p>
+      <p class="micro">
+        <a href="channels.html">Channels</a>
+        <span class="sep">|</span>
+        <a href="#contact">Contact</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
